@@ -8,9 +8,9 @@ bool checkPrime(uint64_t value) {
         		c++;
 		}
     	}
-    	if (c == 0)
+	if (c == 0)
     		return true;
-   	else
+	else
     		return false;
 }
 uint64_t nPrime(uint64_t n) {
