@@ -4,14 +4,14 @@
 bool checkPrime(uint64_t value) {
 uint64_t c = 0;
 for (uint64_t i = 2; i < value; i++) {
-    	if (value % i == 0) {
-        	c++;
+	if (value % i == 0) {
+		c++;
 	}
 }
 if (c == 0)
-    	return true;
+	return true;
 else
-    	return false;
+	return false;
 }
 uint64_t nPrime(uint64_t n) {
 uint64_t count = 0;
