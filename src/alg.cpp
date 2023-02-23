@@ -2,16 +2,16 @@
 #include <cstdint>
 #include "alg.h"
 bool checkPrime(uint64_t value) {
-  uint64_t c = 0;
-    for (uint64_t i = 2; i < value; i++) {
-    	if (value % i == 0) {			
-        	c++;
-	}
-    }
-    if (c == 0)
-    	return true;
-    else
-    	return false;
+	uint64_t c = 0;
+	for (uint64_t i = 2; i < value; i++) {
+    		if (value % i == 0) {
+        		c++;
+		}
+    	}
+    	if (c == 0)
+    		return true;
+   	else
+    		return false;
 }
 uint64_t nPrime(uint64_t n) {
 	uint64_t count = 0;
@@ -20,11 +20,11 @@ uint64_t nPrime(uint64_t n) {
 			count++;
 		}
 		if (count == n) {
-			return i;			
+			return i;
 		}
 	}
 }
-uint64_t nextPrime(uint64_t value){
+uint64_t nextPrime(uint64_t value) {
 	for (uint64_t i = value; i <= value + 1000; i++) {
 		if (checkPrime(i) == true)
 			return i;
