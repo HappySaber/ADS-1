@@ -2,9 +2,9 @@
 #include <cstdint>
 
 #include "alg.h"
-bool checkPrime(int value) {
-  int c = 0;
-  for (int i = 2; i < value; i++) {
+bool checkPrime(uint64_t value) {
+  uint64_t c = 0;
+  for (uint64_t i = 2; i < value; i++) {
     if (value % i == 0) {
       c++;
     }
@@ -14,9 +14,9 @@ bool checkPrime(int value) {
   else
     return false;
 }
-int nPrime(int n) {
-  int count = 0;
-  for (int i = 2; i <= 10000; i++) {
+uint64_t nPrime(uint64_t n) {
+  uint64_t count = 0;
+  for (uint64_t i = 2; i <= 10000; i++) {
     if (checkPrime(i) == true) {
       count++;
     }
