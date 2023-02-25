@@ -17,10 +17,11 @@ uint64_t nPrime(uint64_t n) {
       count++;
     }
     if (count == n) {
-      return d;
+      d = i;
       break;
     }
-  } 
+  }
+  return d;
 }
 uint64_t nextPrime(uint64_t value) {
   uint64_t t = 0;
