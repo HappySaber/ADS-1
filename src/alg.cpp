@@ -23,7 +23,7 @@ if (count == n) {
 return i;
 }
 }
-} 
+}
 uint64_t nextPrime(uint64_t value) {
 for (uint64_t i = value; i <= value + 1000; i++) {
 if (checkPrime(i) == true)
