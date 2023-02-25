@@ -17,14 +17,13 @@ uint64_t nPrime(uint64_t n) {
       count++;
     }
     if (count == n) {
-      d = i;
+      return d;
     }
-  }
-  return d;
+  } 
 }
 uint64_t nextPrime(uint64_t value) {
   uint64_t t = 0;
-  for (uint64_t i = value; i <= value + 2000; i++) {
+  for (uint64_t i = value + 1; i <= value + 2000; i++) {
     if (checkPrime(i) == true) t = i;
   }
   return t;
