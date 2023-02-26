@@ -26,8 +26,11 @@ uint64_t nPrime(uint64_t n) {
 uint64_t nextPrime(uint64_t value) {
   uint64_t t = 0;
   for (uint64_t i = value + 1; i <= value * value; i++) {
-    if (checkPrime(i) == true) t = i;
-  }
+    if (checkPrime(i) == true) {
+      t = i;
+      break;
+    }
+  } 
   return t;
 }
 uint64_t sumPrime(uint64_t hbound) {
